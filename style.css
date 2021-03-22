@@ -12,6 +12,7 @@
 header{
     margin: 30px 0px;
     height: 50px;
+    padding: 0 50px;
 
 }
 a{
@@ -185,15 +186,13 @@ footer{
     align-items: center;
     max-width: 1450px;
     margin: auto;
+    padding: 0 50px;
 
 }
 .footer a{
     color: white;
     padding: 30px;
 }
-
-
-
 
 
 .text-1a{
@@ -214,27 +213,29 @@ footer{
     display: flex;
     justify-content: center;
     border-top: 1px solid gray;
+    margin-top: 30px;
 }
 
 .check-1{
+    width: 50%;
+    border-right: 1px solid gray;
+
 }
 .check-1a{
     
-    border-right: 1px solid gray;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border-left: 1px solid gray;
 
 }
-f
+
 .check-2{
+    width: 50%;
 }
 .check-2a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-left: 1px solid gray;
 
 }
 
@@ -248,4 +249,9 @@ f
     display: flex;
     justify-content: center;
     text-align: center;
+}
+.main-2b{
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
