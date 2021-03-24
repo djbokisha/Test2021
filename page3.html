@@ -8,6 +8,11 @@
     <meta name="keywords" content="hiretest" />
     <meta name="author" content="bojan bojovic" />
     <meta name="description" content="hire test intention digital" />
+    
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
     <!--Css-->
     <link href="style.css" rel="stylesheet" type="text/css" />
     <!--Slick-->
@@ -15,7 +20,7 @@
     <link href="slick/slick-theme.css" rel="stylesheet" />
 
     <!--Icon-->
-    <link rel="icon" href="" type="image/ico" />
+    <link rel="icon" href="#" type="image/ico" />
     <!--Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Font-->
@@ -23,30 +28,20 @@
       href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap"
       rel="stylesheet"/>
 
-    <!--Bootstrap Css-->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
   </head>
 
   <body>
     <header>
       <div class="container">
-        <a href="" class="logo"
-          ><img src="_GRAPHICS/icons/logo-header.png"
-        /></a>
+        <a href="index.html" class="logo"><img src="_GRAPHICS/icons/logo-header.png"/></a>
         <div class="dropdown">
-          <img src="_GRAPHICS/icons/arrow-select.png" />
-          <a href="" class="dropbtn">OPTION</a>
+          <img class="dropdown-img" src="_GRAPHICS/icons/arrow-select.png" />
+          <a href="" class="dropbtn">SELECT OPTION</a>
           <div class="dropdown-content">
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 1</a
-            >
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 2</a
-            >
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 3</a
-            >
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt="" />OPTION 1</a>
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 2</a>
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 3</a>
           </div>
         </div>
         <nav>
@@ -54,16 +49,19 @@
           <a href="page2.html">PAGE2</a>
           <a href="page3.html">PAGE3</a>
         </nav>
-        <div class="call">
-          <div><img src="_GRAPHICS/icons/phone.png" /></div>
+        <div class=" call">
+          <div class="phone"></div>
+          <div class="number">
           <p>012 / 345-678</p>
           <p>Lorem ipsum dolor</p>
         </div>
+        </div>
         <div class="lng">
-          <img src="_GRAPHICS/icons/flag-lng.png" />
+          <img src="_GRAPHICS/icons/flag-lng.png" alt="" />
         </div>
       </div>
     </header>
+
     <section class="main-1b">
         <div class="text-1a">
           <p>Home / Suspendisse</p>
@@ -71,30 +69,59 @@
       </section>
     <section class="main-2b">
 
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1698742.5313470834!2d19.53966474992265!3d43.31591988573231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475720dbdee00fd9%3A0xdfa77784524b968!2sKragujevac!5e0!3m2!1sen!2srs!4v1616438320956!5m2!1sen!2srs"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-        ></iframe>
-      </div>
+<!-- MAPAaaaaaaaa -->
+<div id="map"></div>
+
+      
     </section>
 
     <section class="main-3b">
+    
+<div class="drzava">
+  <div id="ck-button">
+ <label>
+<input type="checkbox" class="name" name="name" value="Srbija" /><span>Srbija</span>
+</label>   
+</div>
+
+
+<div id="ck-button">
+  <label>
+<input type="checkbox" class="name" name="name" value="Nemacka" /><span>Nemacka</span>
+</label>
+</div>
+</div>
+<div class="tip">
+<div id="ck-button">
+  <label>
+<input type="checkbox" class="name" name="name" value="Fransiza" /><span>Fransiza</span>
+</label>
+</div>
+<div id="ck-button">
+  <label>
+<input type="checkbox" class="name" name="name" value="Veleprodaja" /><span>Veleprodaja</span>
+</label>
+</div>
+<div id="ck-button">
+  <label>
+<input type="checkbox" class="name" name="name" value="Maloprodaja" /><span>Maloprodaja</span>
+</label>
+</div>
+</div>
+
+
+
       <table class="table table-striped table-hover">
         <thead>
           <tr>
             <th scope="col">Drzava</th>
             <th scope="col">Tip radnje</th>
-            <th scope="col">Broj telefon</th>
+            <th scope="col">Broj telefona</th>
             <th scope="col">Ulica</th>
           </tr>
         </thead>
-        <tbody class="item_grp">
-          <tr data-status="folders">
+        <tbody class="item_grp" id="myTable">
+          <tr class="item folders">
             <td scope="row">Srbija</td>
             <td>Fransiza</td>
             <td>+381 234628</td>
@@ -202,26 +229,15 @@
             <td>Donec gravida sodales odio</td>
           </tr>
           
-          
-          
-          
         </tbody>
       </table>
-      <div class="button_grp">
-        <ul>
-          <li data-li="all" class="btn active">All</li>
-          <li data-li="folders" class="btn">Folders</li>
-          <li data-li="files" class="btn">Files</li>
-          <li data-li="images" class="btn">Images</li>
-          <li data-li="sheets" class="btn">Sheets</li>
-          <li data-li="pdfs" class="btn">PDFs</li>
-          <li data-li="documents" class="btn">Documents</li>
-        </ul>
-      </div>
-
-      
-
-
+    
+    </section>
+    <section class="main-4b">
+      <h1 class="red">Maecenas tempor tincidunt luctus?</h1>
+      <p>Nunc sodales gravida odio</p>
+      <br>
+      <p class="maincta">MAIN CTA</p>
     </section>
 
     <footer>
@@ -231,19 +247,38 @@
             ><img src="_GRAPHICS/icons/logo-footer.png"
           /></a>
         </div>
-        <div>
+        <div class="footer-end">
+          <div>
           <a href="#">PAGE1</a>
           <a href="#">PAGE2</a>
           <a href="#">PAGE3</a>
-          <p>COPYRIGHT © 2016 MAECENAS VEL MASSA ULLAMCORPER</p>
+        </div>
+        <div>
+          <p>COPYRIGHT &#169; 2016 MAECENAS VEL MASSA ULLAMCORPER 	</p>
+          </div>
         </div>
       </div>
     </footer>
 
+
+
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+    <script>
+      
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
-    <script src="slick/slick.js"></script>
     <script src="main.js"></script>
+    
+
+
   </body>
 </html>

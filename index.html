@@ -10,40 +10,30 @@
     <meta name="description" content="hire test intention digital" />
     <!--Css-->
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
     <!--Slick-->
     <link href="slick/slick.css" rel="stylesheet" />
     <link href="slick/slick-theme.css" rel="stylesheet" />
 
     <!--Icon-->
-    <link rel="icon" href="" type="image/ico" />
+    <link rel="icon" href="#" type="image/ico" />
     <!--Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Font-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Poppins&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <a href="" class="logo"
-          ><img src="_GRAPHICS/icons/logo-header.png"
-        /></a>
+        <a href="index.html" class="logo"><img src="_GRAPHICS/icons/logo-header.png"/></a>
         <div class="dropdown">
-          <img src="_GRAPHICS/icons/arrow-select.png" />
-          <a href="" class="dropbtn">OPTION</a>
+          <img class="dropdown-img" src="_GRAPHICS/icons/arrow-select.png" />
+          <a href="" class="dropbtn">SELECT OPTION</a>
           <div class="dropdown-content">
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 1</a
-            >
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 2</a
-            >
-            <a href="#"
-              ><img src="_GRAPHICS/icons/icon-door-1-active.png" />OPTION 3</a
-            >
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 1</a>
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 2</a>
+            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 3</a>
           </div>
         </div>
         <nav>
@@ -51,13 +41,15 @@
           <a href="page2.html">PAGE2</a>
           <a href="page3.html">PAGE3</a>
         </nav>
-        <div class="call">
-          <div><img src="_GRAPHICS/icons/phone.png" /></div>
+        <div class=" call">
+          <div class="phone"></div>
+          <div class="number">
           <p>012 / 345-678</p>
           <p>Lorem ipsum dolor</p>
         </div>
+        </div>
         <div class="lng">
-          <img src="_GRAPHICS/icons/flag-lng.png" />
+          <img src="_GRAPHICS/icons/flag-lng.png" alt="" />
         </div>
       </div>
     </header>
@@ -66,7 +58,7 @@
       <div class="gradient">
         <div class="text">
           <h1>Nullam risus ultrices</h1>
-          <h1>et <span style="color: red">augue</span></h1>
+          <h1>et <span class="red">augue</span></h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias,
             facere laudantium eaque perspiciatis amet, magnam provident
@@ -84,7 +76,7 @@
       </div>
 
       <div class="right">
-        <h2>Pellentesque non <span style="color: red">est malesuada</span></h2>
+        <h2>Pellentesque non <span class="red">est malesuada</span></h2>
         <br />
         <h5>MAESCENAS TEMPOR TINCIDUNT LASTUC</h5>
         <br />
@@ -114,12 +106,11 @@
         <a href="#">Underline link</a>
       </div>
       <div class="right-2">
-        <img src="_IMAGES/page-1/03-image.png" alt="" />
       </div>
     </section>
     <section class="main-4">
       <div>
-        <img src="_images/page-1/adress.jpg" alt="" />
+        <img src="_images/page-1/adress.jpg" alt=""/>
       </div>
       <br />
       <br />
@@ -144,17 +135,26 @@
             ><img src="_GRAPHICS/icons/logo-footer.png"
           /></a>
         </div>
-        <div>
+        <div class="footer-end">
+          <div>
           <a href="#">PAGE1</a>
           <a href="#">PAGE2</a>
           <a href="#">PAGE3</a>
-          <p>COPYRIGHT © 2016 MAECENAS VEL MASSA ULLAMCORPER</p>
+        </div>
+        <div>
+          <p>COPYRIGHT &#169; 2016 MAECENAS VEL MASSA ULLAMCORPER 	</p>
+          </div>
         </div>
       </div>
     </footer>
 
+    <!-- jquery -->
     <script src="jquery-3.4.1.min.js"></script>
+    <!-- Slide slick -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="slick/slick.js"></script>
+
     <script src="main.js"></script>
   </body>
 </html>
