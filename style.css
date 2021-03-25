@@ -120,6 +120,9 @@ nav a{
 .number{
     padding-left: 8px;
 }
+.lorem{
+    color:rgb(106,106,106);
+}
 .lng{
 display: flex;
 align-items: center;
@@ -257,6 +260,7 @@ footer{
 footer p{
     font-size: 10px;
     text-align: center;
+    color:rgb(106,106,106);
 }
 .footer{
     height: 100px;
@@ -280,7 +284,6 @@ footer p{
     text-align: center;
 }
 
-
 .text-1a{
     display: flex;
     flex-direction: column;
@@ -288,8 +291,11 @@ footer p{
     max-width: 1000px;
     height: 150px;
     background-image: linear-gradient(180deg, rgba(243,243,243), rgb(255, 255, 255));
+    padding-left: 10px;
     z-index: 1;
-
+}
+.gray{
+    color: rgb(177,178,178);
 }
 #txt{
     margin: auto;
@@ -407,7 +413,7 @@ footer p{
   }
 
   
-  #ck-button {
+  .ck-button {
     margin:4px;
     background-color:#EFEFEF;
     border-radius:4px;
@@ -415,33 +421,93 @@ footer p{
     overflow:auto;
 }
 
-#ck-button:hover {
+.ck-button:hover {
     background:red;
 }
 
-#ck-button label {
+.ck-button label {
     float:left;
     width:6.0em;
     height: 1.4em;
 }
 
-#ck-button label span {
+.ck-button label span {
     text-align:center;
     padding:3px 0px;
     display:block;
 }
 
-#ck-button label input {
+.ck-button label input {
     position:fixed;
     top:-20px;
 }
 
-#ck-button input:checked + span {
+.ck-button input:checked + span {
     background-color:#911;
     color:#fff; 
 }
 
 
   @media only screen and (max-width:768px){
+
+
+
+    /* PAGE1 */
+
+
+
+
+
+    /* PAGE2 */
+    .container{
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    height: 132px;
+    }
+    .main-1a{
+        height: 10px;
+        padding-top: 180px;
+        padding-bottom: 400px;
+    }
+    .check-1{
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid grey;
+        width: 100%;
+    }
+    .check-1a{
+        padding-left: 0px;
+    }
+    .main-2a{
+        flex-wrap: wrap;
+    }
+    .check-2
+    {
+        width: 100%;
+    }
+   
+    .main-3a{
+        flex-wrap: wrap;
+    }
+    .footer{
+        flex-wrap: wrap;
+        justify-content: center;
+        display: flex;
+    }
+    
+
+        /* PAGE2 */
+        .main-1b{
+            padding-top: 175px;
+        }
+        .main-3b{
+            width: 100%;
+        }
+        .drzava{
+            margin-right: 0px;
+        }
+
+
       
   }
