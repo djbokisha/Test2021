@@ -8,48 +8,38 @@
      display: flex;
     justify-content: space-between;
     align-items: center;
-}
-header{
-    margin: 30px 0px;
+    background-color: white;
     height: 50px;
-    padding: 0 50px;
 
 }
-a{
-    text-decoration: none;
+header{
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+       z-index: 1;
+}
+a {
+    text-decoration: none !important;
     cursor: pointer;
+}
+
+.active{
+    color: red !important;    
+    text-decoration: underline !important;
+
+}
+
+p{
+    margin-bottom: 0px;
 }
 
 .dropbtn {
     color:white;
     font-size: 16px;
     border: none;
-    cursor: pointer;
-
-    
-}
-
-.dropdown-ls{
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 0;
-}
-ul li{
-    position: relative;
-    cursor: pointer;
-    font-size: 15px;
-    width: 200px;
-    height: 50px;
-    list-style: none;
-}
-.dropdown-ls li{
-    background: red;
-    color: white;
-}
-.dropdown-ls li:hover{
-    display: block;
+    cursor: pointer;  
+    padding-left: 40px;  
 }
 
 .dropdown {
@@ -88,7 +78,9 @@ ul li{
     align-items: center;
     display: flex;
     justify-content: space-around;
-    
+}
+.door{
+    height: 35px;
 }
 .dropdown-content a:hover {
     background-color: white;
@@ -106,8 +98,8 @@ nav{
 }
 nav a{
     padding: 0px 20px;
-    color: black !important;
-    text-decoration: none !important;
+    color: black;
+    text-decoration: none;
 }
 
 .call {
@@ -117,8 +109,8 @@ nav a{
 
 .phone{
     background-color: gray;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-image: url(_graphics/icons/phone.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -221,6 +213,18 @@ text-decoration: underline;
     flex-direction: column;
 
 }
+.map-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-cta{
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+}
 footer{
     height: 100px;
     margin: auto;   
@@ -267,6 +271,10 @@ footer p{
     margin: auto;
     padding-left: 140px;
 }
+.main-1a{
+    height: 280px;
+    padding-top: 100px;
+}
 
 .header-img{
     background-image: url(_images/page-2/01-header-image.jpg);
@@ -293,6 +301,8 @@ footer p{
     
     display: flex;
     justify-content: space-evenly;
+    padding-left:220px
+
 
 }
 
@@ -322,6 +332,9 @@ footer p{
     justify-content: center;
     text-align: center;
 }
+.main-1b{
+    padding-top: 100px;
+}
 .main-2b{
     display: flex;
     align-content: center;
@@ -334,6 +347,18 @@ footer p{
 .main-3b{
     width: 1000px;
     margin: auto;
+    padding-top: 30px;
+}
+.buttons{
+    display: flex;
+    padding-bottom: 60px;
+}
+.drzava{
+    display: flex;
+    margin-right: 115px;
+}
+.tip{
+    display: flex;
 }
 .main-4b{
     text-align: center;
@@ -369,7 +394,6 @@ footer p{
     border-radius:4px;
     border:1px solid #D0D0D0;
     overflow:auto;
-    float:left;
 }
 
 #ck-button:hover {
@@ -397,6 +421,7 @@ footer p{
     background-color:#911;
     color:#fff; 
 }
+
 
   @media only screen and (max-width:768px){
       

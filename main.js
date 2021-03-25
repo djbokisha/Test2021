@@ -49,4 +49,14 @@ $(document).ready(function(){
     if(flag == 1)
     	$("#myTable tr").show()
   });
+
+  $('.gradient').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+  });
+
 });
+

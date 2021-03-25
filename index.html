@@ -8,12 +8,14 @@
     <meta name="keywords" content="hiretest" />
     <meta name="author" content="bojan bojovic" />
     <meta name="description" content="hire test intention digital" />
+    
+
     <!--Css-->
     <link href="style.css" rel="stylesheet" type="text/css" />
     
     <!--Slick-->
-    <link href="slick/slick.css" rel="stylesheet" />
-    <link href="slick/slick-theme.css" rel="stylesheet" />
+    <link href="slick/slick.css" rel="stylesheet" type="text/css"/>
+    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css" />
 
     <!--Icon-->
     <link rel="icon" href="#" type="image/ico" />
@@ -26,18 +28,18 @@
   <body>
     <header>
       <div class="container">
-        <a href="index.html" class="logo"><img src="_GRAPHICS/icons/logo-header.png"/></a>
+        <a href="index.html" class="logo"><img src="_GRAPHICS/icons/logo-header.png" alt=""/></a>
         <div class="dropdown">
-          <img class="dropdown-img" src="_GRAPHICS/icons/arrow-select.png" />
+          <img class="dropdown-img" src="_GRAPHICS/icons/arrow-select.png" alt="" />
           <a href="" class="dropbtn">SELECT OPTION</a>
           <div class="dropdown-content">
-            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 1</a>
-            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 2</a>
-            <a href="#"><img src="_GRAPHICS/icons/icon-door-1-active.png" height="35px" alt=""/>OPTION 3</a>
+            <a href="#"><img class="door" src="_GRAPHICS/icons/icon-door-1-active.png" alt=""/>OPTION 1</a>
+            <a href="#"><img class="door" src="_GRAPHICS/icons/icon-door-1-active.png" alt=""/>OPTION 2</a>
+            <a href="#"><img class="door" src="_GRAPHICS/icons/icon-door-1-active.png" alt=""/>OPTION 3</a>
           </div>
         </div>
         <nav>
-          <a href="index.html">PAGE1</a>
+          <a class="active" href="index.html">PAGE1</a>
           <a href="page2.html">PAGE2</a>
           <a href="page3.html">PAGE3</a>
         </nav>
@@ -56,6 +58,7 @@
 
     <section class="main-1">
       <div class="gradient">
+        <div class="slick">
         <div class="text">
           <h1>Nullam risus ultrices</h1>
           <h1>et <span class="red">augue</span></h1>
@@ -69,6 +72,36 @@
           <h4>MAIN CTA</h4>
         </div>
       </div>
+      <div class="slick">
+        <div class="text">
+          <h1>Nullam risus ultrices</h1>
+          <h1>et <span class="red">augue</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias,
+            facere laudantium eaque perspiciatis amet, magnam provident
+            voluptatibus soluta itaque rerum quidem ex doloremque excepturi
+            voluptates magni, cupiditate ratione obcaecati.
+          </p>
+
+          <h4>MAIN CTA</h4>
+        </div>
+      </div>
+         <div class="slick">
+        <div class="text">
+          <h1>Nullam risus ultrices</h1>
+          <h1>et <span class="red">augue</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In alias,
+            facere laudantium eaque perspiciatis amet, magnam provident
+            voluptatibus soluta itaque rerum quidem ex doloremque excepturi
+            voluptates magni, cupiditate ratione obcaecati.
+          </p>
+
+          <h4>MAIN CTA</h4>
+        </div>
+      </div>
+      </div>
+      
     </section>
     <section class="main-2">
       <div class="left">
@@ -92,7 +125,7 @@
     </section>
     <section class="main-3">
       <div class="left-2">
-        <h2>PELLENTESQUE urna</h2>
+        <h2><span class="red">PELLENTESQUE</span> urna</h2>
         <br />
         <h5>MORBI ANTE ERAT,FERMENTUM EGET DIAM SIT EMET</h5>
         <br />
@@ -116,7 +149,7 @@
       <br />
       <br />
 
-      <div>
+      <div class="map-text">
         <h2>Pellentesque non est at risus</h2>
         <h1>30 LOBORTIS</h1>
         <br />
@@ -125,21 +158,19 @@
           IPSUM NEQUE, FEUGET PRETIUM EGET, PLACERAT EU LACUS.
         </p>
         <br />
-        <p>MAIN CTA</p>
+        <p class="main-cta">MAIN CTA</p>
       </div>
     </section>
     <footer>
       <div class="footer">
         <div>
-          <a href="" class="logo"
-            ><img src="_GRAPHICS/icons/logo-footer.png"
-          /></a>
+          <a href="index.html" class="logo"><img src="_GRAPHICS/icons/logo-footer.png" alt=""/></a>
         </div>
         <div class="footer-end">
           <div>
-          <a href="#">PAGE1</a>
-          <a href="#">PAGE2</a>
-          <a href="#">PAGE3</a>
+          <a href="index.html">PAGE1</a>
+          <a href="page2.html">PAGE2</a>
+          <a href="page3.html">PAGE3</a>
         </div>
         <div>
           <p>COPYRIGHT &#169; 2016 MAECENAS VEL MASSA ULLAMCORPER 	</p>
@@ -153,7 +184,8 @@
     <!-- Slide slick -->
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="slick/slick.js"></script>
+    <script src="slick/slick.min.js"></script>
+    
 
     <script src="main.js"></script>
   </body>
